@@ -1,0 +1,14 @@
+@import "variables";
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+body{
+    background-color: $color-back-white;
+    box-sizing: border-box;
+}

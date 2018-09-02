@@ -1,0 +1,116 @@
+@import "typography";
+@import "variables";
+
+.getstarted{
+    padding: 5.8125em 14.25em 13em 5.9375em;
+    display: flex;
+    justify-content: space-between;
+    font-family: "AvenirNext";
+    &__try{
+        display: flex;
+        flex-direction: column;
+
+        &--header{
+            font-weight: 600;
+            font-size: 1.875em;
+            &-sub{
+                font-size: 1.875em;
+            }
+        }
+        &--description{
+            font-size: 0.875em;
+            color: $color-text-gray-dark;
+            margin-top: 1.8125em;
+        }
+        &--container{
+            display: flex;
+            align-items: center;
+            margin-top: 3.375em;
+            ::-webkit-input-placeholder {
+                color: $color-text-gray-input;
+              }
+              ::-moz-placeholder { 
+                color: $color-text-gray-input;
+              }
+              :-ms-input-placeholder { 
+                color: $color-text-gray-input;
+              }
+              :-moz-placeholder { 
+                color: $color-text-gray-input;
+              }
+            &-email{
+                border: 1px solid #e3e4e5;
+                padding: 0.875em 8.25em 0.6875em 0.625em;
+            }
+            &-button{
+                margin-left: 0.75em;
+                background-color: $color-back-red;
+                padding: 0.75em;
+                color: $color-text-white;
+                text-decoration: none;
+                border: 1.5px solid $color-back-red;
+                cursor: pointer;
+                img{
+                    margin-left: 2em;
+                }
+            }
+        }
+    }
+    &__testamonials{
+        flex-basis: 30%;
+        &--quote{
+            display: flex !important;
+            &-content{
+                margin-left: 1.6875em;
+                &-header{
+                    font-size: 1.125em;
+                    font-weight: 500;
+                    width: 70%;
+                }
+                &-description{
+                    margin-top: 1.5625em;
+                    display: flex;
+                    &-text{
+                        margin-top: 0.75em;
+                        margin-left: 0.625em;
+                        &-name{
+                            font-weight: 600;
+                            font-size: 1.125em;
+                        }
+                        &-company{
+                            font-weight: 500;
+                            font-size: 0.8125em;
+                        }
+                    }
+                    &-textsecond{
+                        margin-top: 0;
+                    }
+                    &-textthird{
+                        margin-top: 0.29em;
+                    }
+                }
+            }
+        }
+        &--dots{
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-top: 1.3125em;
+            padding-right: 8em;
+            &-dot{
+                height: 0.75em;
+                width: 0.75em;
+                background-color: #d8d8d8;
+                border-radius: 10px;
+                cursor: pointer;
+                    margin: 0 0.375em;
+            }
+        }
+    }
+}
+
+.fl{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,61 @@
+@import "typography";
+@import "variables";
+
+.polygon{
+    background: url(../images/Polygon.png) ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    clip-path: polygon(0 70%, 100% 30%, 100% 100%, 0% 100%);
+    height: 100vh;
+    margin-top: -25%;
+}
+
+.main{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 9.6em 14.1em 0em 4.25em;
+    max-width: 1600px;
+    font-family: "AvenirNext";
+    &__headline{
+        display: flex;
+        flex-direction: column;
+        h6{
+            font-size: 1.125em;
+            font-weight: 400;
+            margin-top: 1.25em;
+        }
+        &--button{
+            display: flex;
+            align-items: center;
+            margin-top: 3.5em;
+            &-discover{
+                margin-left: 1.5em;
+                font-weight: 400;
+                font-size: 0.875em;
+                color: #cbcbcb;
+                text-decoration: underline;
+            }
+        }
+    }
+    &__new{
+        display: flex;
+        align-items: center;
+        height: 1.5em;
+        padding-right: 2em;
+        &--alert{
+            background-color: $color-back-blue;
+            padding: 0.25em 0.6em;
+            border-radius: 3px;
+            color: $color-text-white;
+            font-size: 0.75em;
+        }
+        &--text{
+            margin-left: 1em;
+            font-size: 0.75em;
+            
+        }
+    }
+}

@@ -1,0 +1,67 @@
+@import "typography";
+@import "variables";
+
+.getstarted__testamonials--dots-dot{
+    &:hover{
+        background-color: black;
+    }
+}
+
+.main__button{
+    &:hover{
+        .buttonarrow{
+            animation-name: arrow;
+            animation-duration: 0.5s;
+            animation-timing-function: linear;
+        }
+    }
+}
+
+@keyframes arrow{
+    0%{
+      transform: translateX(0em);
+    }
+    
+    100%{
+      transform: translateX(0.5em);
+    }
+} 
+
+.main__headline--button-discover{
+    &:hover{
+        color: #cbcbcb;
+    }
+}
+
+.navbar-toggler{
+    outline: none;
+}
+
+.main__button,{
+    &:hover{
+        color: $color-text-white;
+        text-decoration: none;
+    }
+}
+.reshaping__content--link{
+    &:hover{
+        color: $color-text-white;
+    }
+}
+.sticky-header__navigation{
+    a{
+        &:hover{
+            color: $color-text-black;
+        }
+    }
+}
+.footer__main{
+    a{
+        &:hover{
+            color: $color-text-footer;
+            text-decoration: none;
+        }
+    }
+}
+
+

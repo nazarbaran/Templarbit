@@ -1,0 +1,72 @@
+@import "typography";
+@import "variables";
+
+.footer{
+    border-top:1px solid #e3e4e5;
+    padding: 5.625em 3.75em 3.3125em 4.625em;
+    &__main{
+        display: flex;
+        &--block{
+            display: flex;
+            flex-direction: column;
+            &:not(:first-child){
+                margin-left: 6.25em;
+            }
+            &-header{
+                text-transform: uppercase;
+                font-size: 0.75em;
+                font-weight: 700;
+            }
+            &-content{
+                display: flex;
+                flex-direction: column;
+                margin-top: 1.375em;
+                a{
+                    text-decoration: none;
+                    color: $color-text-footer;
+                    font-weight: 500;
+                    font-size: 0.875em;
+                    &:not(:first-child){
+                        margin-top: 0.6875em;
+                    }
+                }
+            }
+        }
+    }
+    &__bottom{
+        display: flex;
+        align-items: center;
+        margin-top: 9.6875em;
+        &--logo{
+            display: flex;
+            align-items: center;
+            &-text{
+                margin-left: 0.75em;
+                color: #70787d;
+                font-weight: 500;
+                font-size: 0.75em;
+            }
+        }
+        &--links{
+            display: flex;
+            align-items: center;
+            margin-left: 9em;
+            a{
+                cursor: pointer;
+                color: #5c646a;
+                font-size: 0.75em;
+                &:not(:first-child){
+                    margin-left: 2.4375em;
+                }
+            }
+        }
+        &--social{
+            margin-left: auto;
+            a{
+                &:last-child{
+                    margin-left: 1.25em;
+                }
+            }
+        }
+    }
+}

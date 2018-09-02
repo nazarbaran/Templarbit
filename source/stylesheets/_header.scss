@@ -1,0 +1,54 @@
+@import "typography";
+@import "variables";
+
+.sticky-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8em 2em;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.13);
+    font-family: "AvenirNext";
+    &__logo{
+        display: flex;
+        align-items: center;
+        flex-basis: 15%;
+        padding-top: 1em;
+        padding-bottom: 0.75em;
+        
+        h1{
+            font-size: 1.25em;
+            text-transform: uppercase;
+            margin-left: 1em;
+            margin-bottom: 0;
+            font-weight: 500;
+            letter-spacing: 6px;
+            
+        }
+    }
+    &__navigation{
+        list-style: none;
+            margin-left: 2.75em;
+        a{
+            color: $color-text-black !important;
+            font-weight: 500;
+            font-size: 0.9em;
+        }
+        .sticky-header__navigation--login{
+            display: flex;
+            align-items: center;
+            img{
+                margin-left: 0.8em;
+            }
+        }
+    }
+    .mr-auto{
+        margin-right: 6.1875em !important;
+        margin-left: auto;
+    }
+    .navbar-toggler{
+        border: none;
+    }
+}
+
+
+
